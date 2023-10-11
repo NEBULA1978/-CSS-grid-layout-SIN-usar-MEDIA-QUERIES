@@ -1,31 +1,33 @@
-/* Define un contenedor con una cuadrícula */
-.grid-container {
-    background-color: darkgray;
-    /* Establece el color de fondo del contenedor */
-    display: grid;
-    /* Configura el contenedor como una cuadrícula */
-    gap: 10px;
-    /* Define un espacio de 10 píxeles entre las celdas de la cuadrícula */
-}
+    /* Define un contenedor con una cuadrícula */
+    .grid-container {
+        background-color: darkgray;
+        /* Establece el color de fondo del contenedor */
+        display: grid;
+        /* Configura el contenedor como una cuadrícula */
+        gap: 10px;
+        /* Define un espacio de 10 píxeles entre las celdas de la cuadrícula */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /* Define el patrón de columnas de la cuadrícula: se ajustan automáticamente con un ancho mínimo de 100px y se expanden de manera equitativa */
+    }
 
-/* Estilo de los elementos hijos del contenedor */
-.grid-container>div {
-    background-color: darkolivegreen;
-    /* Establece el color de fondo de cada celda */
-    border: 5px solid black;
-    /* Agrega un borde de 5 píxeles sólido en color negro a cada celda */
-    color: white;
-    /* Establece el color del texto en blanco */
-    /* text-align: center; */
-    /* Esto está comentado, por lo que no tiene efecto. Si se descomenta, centraría el texto horizontalmente en cada celda */
-    height: 300px;
-    /* Establece la altura de cada celda en 300 píxeles */
-    display: flex;
-    /* Configura el contenido de la celda como un contenedor flexible */
-    justify-content: center;
-    /* Centra el contenido horizontalmente en la celda */
-    align-items: center;
-    /* Centra el contenido verticalmente en la celda */
-    font-size: 60px;
-    /* Establece el tamaño de fuente en 60 píxeles */
-}
+    /* Estilo de los elementos hijos del contenedor */
+    .grid-container>div {
+        background-color: darkolivegreen;
+        /* Establece el color de fondo de cada celda */
+        border: 5px solid black;
+        /* Agrega un borde de 5 píxeles sólido en color negro a cada celda */
+        color: white;
+        /* Establece el color del texto en blanco */
+        /* text-align: center; */
+        /* Esto está comentado, por lo que no tiene efecto. Si se descomenta, centraría el texto horizontalmente en cada celda */
+        height: 300px;
+        /* Establece la altura de cada celda en 300 píxeles */
+        display: flex;
+        /* Configura el contenido de la celda como un contenedor flexible */
+        justify-content: center;
+        /* Centra el contenido horizontalmente en la celda */
+        align-items: center;
+        /* Centra el contenido verticalmente en la celda */
+        font-size: 60px;
+        /* Establece el tamaño de fuente en 60 píxeles */
+    }
