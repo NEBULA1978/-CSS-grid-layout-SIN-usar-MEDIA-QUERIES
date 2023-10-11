@@ -1,0 +1,13 @@
+.grid-container{
+    background-color: darkgray;
+    display: grid;
+    gap: 10px;
+}
+
+.grid-container > div {
+    background-color: darkolivegreen ! important;
+    border: 5px solid black;
+    color: white;
+    text-align: center;
+    height: 300px;
+}
