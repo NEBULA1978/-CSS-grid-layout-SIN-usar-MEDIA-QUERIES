@@ -5,9 +5,13 @@
 }
 
 .grid-container > div {
-    background-color: darkolivegreen ! important;
+    background-color: darkolivegreen;
     border: 5px solid black;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
 }
