@@ -6,7 +6,7 @@
         /* Configura el contenedor como una cuadrícula */
         gap: 10px;
         /* Define un espacio de 10 píxeles entre las celdas de la cuadrícula */
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         /* Define el patrón de columnas de la cuadrícula: se ajustan automáticamente con un ancho mínimo de 100px y se expanden de manera equitativa */
     }
 
