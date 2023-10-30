@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+            height: 400px;
+
+            /* Esta por defecto sino ponemos nada */
+            
+            /* flex-wrap: nowrap; */
+            
+            /* Para que sino caben pasen a la fila de abajo */
+            flex-wrap: wrap;
+            
+            /* Empiez el 1 abajo izquierda */
+            /* flex-wrap: wrap-reverse; */
+
+            /* Para las 2 propiedades anteriores en una; */
+            /* flex-flow: row wrap; */
+            
+            /* Columna */
+            /* flex-flow: column wrap; */
+
+            /* Por defecto si no ponemos nada */
+            /* Horizontal */
+            /* flex-direction: row; */
+            
+            /* Ivertido */
+            /* flex-direction: row-reverse; */
+
+            /* Vertical */
+            /* flex-direction: column; */
+            
+            /* Invierte */
+            /* flex-direction: column-reverse; */
+            
+            /* Alineamos cajas de diferentes manera */
+            align-content: space-between;
+            align-content: space-around;
+            align-content: stretch;
+            align-content: flex-start;
+            align-content: flex-end;
+
+            background-color: burlywood;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        /* hijos flex-container */
+        .flex-container div{
+            background-color: gainsboro;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <!-- flex-shrink mantiene la caja su valor de ancho y alto aunque añada mas elelementos se mantiene su tamaño el resto mas pequeños-->
+    <div style="background-color: red; order: 1; flex-grow: 1; flex-shrink: 0;">1</div>
+    <!-- flex-basis le damos ancho  a caja 200px ,como minimo -->
+    <div style="background-color: green; order: 2; flex-basis: 200px;">2</div>
+    <div style="background-color: blue; order: 3; flex-grow: 3;">3</div>
+    <!-- El orden con order y el tamaño con flex-grow -->
+    <div style="order: 4; flex-grow: 10;">4</div>
+    <div style="background-color: red; order: 1; flex-grow: 1; flex-shrink: 0;">1</div>
+    <div style="background-color: green; order: 2; flex-grow: 2;">2</div>
+    <div style="background-color: blue; order: 3; flex-grow: 3;">3</div>
+    <!-- El orden con order y el tamaño con flex-grow -->
+    <div style="order: 4; flex-grow: 10;">4</div>
+    <div style="background-color: green; order: 2; flex-grow: 2;">2</div>
+    <div style="background-color: blue; order: 3; flex-grow: 3;">3</div>
+    <!-- El orden con order y el tamaño con flex-grow -->
+    <div style="order: 4; flex-grow: 10;">4</div>
+
+    <!-- Las tres propiedades anteroires con flex:flex-grow flex-shrink  flex-basis-->
+    <div style="order: 4; flex: 0 0 200px;">4</div>
+
+</div>
+
+
+
+</body>
+</html>

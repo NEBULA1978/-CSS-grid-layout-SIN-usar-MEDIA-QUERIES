@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        * {
+            box-sizing: border-box; /* All elements include padding and border in their total width */
+        }
+
+        .flex-container {
+            display: flex; /* Create a flex container */
+            flex-flow: row wrap; /* Shorthand for flex-direction and flex-wrap */
+            justify-content: space-between; /* Distribute items with maximum space between them */
+            align-items: stretch; /* Stretch items to fill the container's height */
+            background-color: burlywood; /* Background color for the container */
+            padding: 10px; /* Padding around the container */
+            border: 2px solid black; /* Black border around the container */
+        }
+
+        .flex-container div {
+            background-color: gainsboro; /* Background color for child elements */
+            width: 100px; /* Fixed width for child elements */
+            margin: 10px; /* Margin around child elements */
+            text-align: center; /* Center text horizontally within child elements */
+            line-height: 75px; /* Set the line height for child elements */
+            font-size: 30px; /* Set the font size for child elements */
+            border: 2px solid black; /* Black border around child elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

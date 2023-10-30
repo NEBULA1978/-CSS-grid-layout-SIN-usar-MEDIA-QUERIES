@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+
+            /* Esta por defecto sino ponemos nada */
+            
+            /* flex-wrap: nowrap; */
+            
+            /* Para que sino caben pasen a la fila de abajo */
+            /* flex-wrap: wrap; */
+            
+            /* Empiez el 1 abajo izquierda */
+            /* flex-wrap: wrap-reverse; */
+
+            /* Para las 2 propiedades anteriores en una; */
+            flex-flow: row wrap;
+            
+            /* Columna */
+            /* flex-flow: column wrap; */
+
+            /* Por defecto si no ponemos nada */
+            /* Horizontal */
+            /* flex-direction: row; */
+            
+            /* Ivertido */
+            /* flex-direction: row-reverse; */
+
+            /* Vertical */
+            /* flex-direction: column; */
+            
+            /* Invierte */
+            /* flex-direction: column-reverse; */
+            
+            
+            /* Alinear elelentos */
+            justify-content: flex-start;
+            justify-content: center;
+            justify-content: center;
+            justify-content: space-around;
+            /* se ajusta a laterales anterior no */
+            justify-content: space-between;
+
+            height: 400px;
+            /* se centra verticalmente */
+            align-items: center;
+            align-items: start;
+            align-items: end;
+            /* El que esta por defecto */
+            align-items: stretch;
+            /* alinea la base de todos elementos */
+            align-items: baseline;
+
+            background-color: burlywood;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        /* hijos flex-container */
+        .flex-container div{
+            background-color: gainsboro;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <!-- voy minuto3 -->
+    </div>
+</body>
+</html>
